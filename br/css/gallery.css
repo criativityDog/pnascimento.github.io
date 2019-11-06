@@ -1,0 +1,78 @@
+* {margin: 0 auto; padding: 0 auto; list-style: none;}
+body{width: 100%; margin: 0 auto; background-color: #000; clear: fixed; overflow-x: hidden}
+@font-face{font-family: tahoma;}
+h2{font-size: 7em; font-family: tahoma;}
+
+/*Desktop - Resolução 901px a 1366px*/
+@media only screen and (min-width: 901px) and (max-width: 1920px) {
+body{width: 100%; margin: 0 auto; background-color: #000; letter-spacing: 3px; font-family: tahoma; font-size: 50px, color: #fff; clear: fixed;}
+
+
+---
+h1{font-size: 7em; font: #fff;}
+h2{font-size: 5em; font: #fff;}
+h3{font-size: 2em; font: #fff;}
+p{font-size: 2em; font: #fff;}
+a{cursor: pointer; font-size: .9em; color: #fff;}
+a:link{text-decoration: none; font-size: .9em; color: #fff;}
+a:hover{cursor: pointer; text-decoration: none; font-size: .9em; color: #ce8f08;}
+
+header{width: 100%; margin: 0 auto; display: block;}
+header img{width: 20%; padding: 0 10% 0 6%; float: left; display: block;}
+
+.boxMenu{width: 100%;display: block;z-index: 10;margin: 2% 2%; background-color: #fff;/* float: right; */}
+
+
+header.boxMenu ul{width: 100%;display: block;z-index: 10;margin: 2% 2%; background-color: #ccc;/* float: right; */}
+header ul.boxMenu li{margin: 0 auto; padding: 0 2%; display: inline; z-index: 10; top: 10%;}
+header nav ul li{margin: 0 auto; display: inline-block;}
+header nav ul li a{margin: 0 auto; padding-top: 10px; padding-right: 15px; padding-bottom: 10px; padding-left: 15px; text-align:center; color: #fff;}
+header div.bg-cao img{width: 86%;margin: 0 auto; z-index: -19;position: relative;top: -339px;}
+
+header div.bg-cao img.head{width: 86%;margin: -62% auto;z-index: -22;position: relative;/* top: -654px; */}
+
+
+header div.boxIntro {width: 56%;margin: 0 auto; display: block; z-index: 28; color: #fff;/* top: 116px; */position: relative;top: 220px;text-align: center;}
+header div.boxIntro h1{margin: 0 auto;top: 15px; display: block; z-index: 20; color: #ce8f08;position: relative;}
+header div.boxIntro img.arrowDown{width: 4%; margin: 0 42%;top: 10px; display: block;z-index: 20;color: #fff;position: relative; text-align: center;}
+
+
+
+article.port{width: 100%;margin: 0 auto;display: block;}
+article.port h2.title-port{width: 100%;font-size: 5em;color: #ce8f08;padding: -57% -108%;/* float: left; */line-height: 1em;margin: 17% auto 8%;text-align: center;}
+article.port ul{width: 90%;margin: 30% auto -28%;display: flex;}
+article.port ul.port-box li{width: 100%;margin: 0 auto;display: inline;}
+article.port ul.port-box li a img.gal{width: 86%;margin: 0 auto; z-index: -19;position: relative;top: -339px;}
+
+
+article.arrowBack ul li{width: 86%; margin: 0 auto;}
+article.arrowBack ul li a .linkBack{width: 3%; margin: 0 auto; z-index: -19; position: relative; top: 200px; fill: 0;}
+article.arrowBack ul li a img.aBack{width: 3%; margin: 0 auto; z-index: -19; position: relative; top: 200px; fill: 0;}
+
+
+
+
+/*Footer*/
+footer{width: 100%;/* height: 100%; */margin: 23% auto 0%;padding-top: 2%;/* padding-bottom: 0%; */line-height: 50%;text-align: center;background: #111;display: block;/* overflow-x: hidden; */}
+footer ul{width: 80%;height: 4%;margin: 0 auto 0%;padding-top: 3px;padding-left: 5px;padding-bottom: 10px;font-size: 0.6em;text-align: center;color: #fff;}
+footer ul li{width: 88%; height: 100%; margin: 0 auto; padding-top: 3px; padding-left: 5px; padding-bottom: 10px; text-align: center; color: #fff;}
+footer ul li p{font-size: 1em; text-align: center; color: #fff;}
+a.topage{text-align: center; font-size: 2rem; text-decoration: none; color: #fff;}
+#myBtn{width: 40px; height: 40px; position: fixed; right: 18px; bottom: 120px; text-align: center; line-height: 25px; font-size: 2rem; text-decoration: none;/* background-color: #063c4a; */color: #ececec; border-radius: 10px; display: none; cursor: pointer; z-index: 99; border: solid #ffffff42 1px;}   
+
+#myBtn {display: inline-block; background-color: #2a3b5063; width: 40px; height: 40px;text-align: center;border-radius: 12px;position: fixed; bottom: 30px; right: 40px; transition: background-color .3s, opacity .5s, visibility .5s;opacity: 0;visibility: hidden;z-index: 1000;}
+#myBtn::after {content: "\f077";font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: .6em; line-height: 37px; color: #ffffff7a;}
+#myBtn:hover {cursor: pointer; background-color: #ce8f08;}
+#myBtn:active {background-color: #555;}
+#myBtn.show {opacity: 1; visibility: visible;}
+
+/*Ainmação*/
+[data-anime] {opacity:0; transition: 2s;}
+[data-anime="left"] {transform: translate3d(-80px, 0, 0);}
+[data-anime="right"] {transform: translate3d(80px, 0, 0);}
+[data-anime="top"] {opacity: 0; transform: translate3d(0, -500px, 0);}
+[data-anime].animate {opacity: 1; transform: translate3d(0px, 0px, 0px);};}
+
+}
+
+
